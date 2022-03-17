@@ -1,12 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using Raylib_cs;
 
-namespace Slutprojekt
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+Raylib.InitWidow(800, 600);
+Raylib.SetTargetFPS(60);
+
+Random generator = new Random();

@@ -1,0 +1,5 @@
+C:\Users\emsgard.johan\Programering1\Slutprojekt\Slutprojekt\obj\Debug\net5.0\Slutprojekt.csproj.AssemblyReference.cache
+C:\Users\emsgard.johan\Programering1\Slutprojekt\Slutprojekt\obj\Debug\net5.0\Slutprojekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emsgard.johan\Programering1\Slutprojekt\Slutprojekt\obj\Debug\net5.0\Slutprojekt.AssemblyInfoInputs.cache
+C:\Users\emsgard.johan\Programering1\Slutprojekt\Slutprojekt\obj\Debug\net5.0\Slutprojekt.AssemblyInfo.cs
+C:\Users\emsgard.johan\Programering1\Slutprojekt\Slutprojekt\obj\Debug\net5.0\Slutprojekt.csproj.CoreCompileInputs.cache

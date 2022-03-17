@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj": {}
+    "C:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj": {}
   },
   "projects": {
-    "c:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj": {
+    "C:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj",
+        "projectUniqueName": "C:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj",
         "projectName": "Slutprojekt",
-        "projectPath": "c:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj",
+        "projectPath": "C:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\Slutprojekt.csproj",
         "packagesPath": "C:\\Users\\emsgard.johan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\obj\\",
+        "outputPath": "C:\\Users\\emsgard.johan\\Programering1\\Slutprojekt\\Slutprojekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emsgard.johan\\AppData\\Roaming\\NuGet\\NuGet.Config"
