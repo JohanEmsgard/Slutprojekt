@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using Raylib_cs;
 
-Raylib.InitWindow(800, 600, "Platformer");
+Raylib.InitWindow(1000, 800, "Platformer");
 Raylib.SetTargetFPS(60);
 
-Random generator = new Random();
+
+while(!Raylib.WindowShouldClose())
+{
+    Raylib.BeginDrawing();
+    Raylib.ClearBackground(Color.GREEN);
+    Raylib.EndDrawing();
+}
+
 Console.ReadLine();
