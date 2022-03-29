@@ -17,14 +17,17 @@ while(!Raylib.WindowShouldClose())
     Raylib.ClearBackground(Color.GREEN); 
     Raylib.DrawRectangle((int)position.X,(int)position.Y,100,100,Color.BLUE);
 
-    //Så programmet inte stängs av på dirketen
-    Raylib.EndDrawing();
+
 
     //Så vilka knappar är movement och hur fort dom gör på sig.
     if(Raylib.IsKeyDown(KeyboardKey.KEY_A)) position.X -= 10;
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_S)) position.X += 10;
+    if(Raylib.IsKeyDown(KeyboardKey.KEY_D)) position.X += 10;
     if(Raylib.IsKeyDown(KeyboardKey.KEY_W)) position.Y -= 10;
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_Z)) position.Y += 10;
+    if(Raylib.IsKeyDown(KeyboardKey.KEY_S)) position.Y += 10;
+
+
+    //Så programmet inte stängs av på dirketen
+    Raylib.EndDrawing();
 }
 
 
