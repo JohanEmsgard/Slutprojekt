@@ -10,25 +10,73 @@ Raylib.SetTargetFPS(60);
 // X och Y. Den har två axlar. 
 Vector2 position = new Vector2(10, 10);
 
-Random Generator = new Random ();
+Random Generator = new Random();
 List<Rectangle> platforms = new List<Rectangle>();
 
+platforms.Add(new Rectangle(100, 100, 100, 100));
+
+float movementX = 0;
+float movementY = 0;
+
 //För skärmens background
-while(!Raylib.WindowShouldClose())
+while (!Raylib.WindowShouldClose())
 {
-    Raylib.BeginDrawing();
-    Raylib.ClearBackground(Color.GREEN); 
-    Raylib.DrawCircle((int)position.X,(int)position.Y,40,Color.BLUE);
-    Raylib.DrawRectangle(100,100,100,100,Color.BROWN);
-    Raylib.DrawRectangle(10,700,500,10,Color.BROWN);
-
-
+    movementX = 0;
 
     //Så vilka knappar är movement och hur fort dom gör på sig.
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_A)) position.X -= 10;
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_D)) position.X += 10;
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_W)) position.Y -= 10;
-    if(Raylib.IsKeyDown(KeyboardKey.KEY_S)) position.Y += 10;
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_A)) movementX = -10;
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_D)) movementX = 10;
+
+    position.X += movementX;
+
+    bool undoX = false;
+    bool undoY = false;
+    foreach (Rectangle platform in platforms)
+    {
+        if (Raylib.CheckCollisionCircleRec(position, 40, platform))
+        {
+            undoX = true;
+        }
+
+        if (Raylib.CheckCollisionCircleRec(position, 40, platform))
+        {
+            undoY = true;
+        }
+
+    }
+
+    if (undoX == true)
+    {
+        position.X -= movementX;
+    }
+    
+    if (undoY == true)
+    {
+        position.Y -= movementY;
+    }
+
+    movementY = 0;
+
+
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_W)) movementY = -10;
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_S)) movementY = 10;
+
+    position.Y += movementY;
+
+
+
+
+
+
+
+
+    Raylib.BeginDrawing();
+    Raylib.ClearBackground(Color.GREEN);
+    Raylib.DrawCircleV(position, 40, Color.BLUE);
+    Raylib.DrawRectangleRec(platforms, Color.BROWN);
+    Raylib.DrawRectangle(10, 700, 500, 10, Color.BROWN);
+
+
 
 
     //Så programmet inte stängs av på dirketen
