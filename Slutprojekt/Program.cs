@@ -10,12 +10,17 @@ Raylib.SetTargetFPS(60);
 // X och Y. Den har två axlar. 
 Vector2 position = new Vector2(10, 10);
 
+Random Generator = new Random ();
+List<Rectangle> platforms = new List<Rectangle>();
+
 //För skärmens background
 while(!Raylib.WindowShouldClose())
 {
     Raylib.BeginDrawing();
     Raylib.ClearBackground(Color.GREEN); 
-    Raylib.DrawRectangle((int)position.X,(int)position.Y,100,100,Color.BLUE);
+    Raylib.DrawCircle((int)position.X,(int)position.Y,40,Color.BLUE);
+    Raylib.DrawRectangle(100,100,100,100,Color.BROWN);
+    Raylib.DrawRectangle(10,700,500,10,Color.BROWN);
 
 
 
