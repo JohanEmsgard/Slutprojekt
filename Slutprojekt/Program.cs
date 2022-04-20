@@ -79,6 +79,8 @@ while (!Raylib.WindowShouldClose())
     if (Raylib.IsKeyDown(KeyboardKey.KEY_S)) movementY = 10;
 
 
+
+    //Så metoden anropas 
     Collistions();
 
 
@@ -92,8 +94,12 @@ while (!Raylib.WindowShouldClose())
         Raylib.DrawRectangleRec(platforms[0], Color.BROWN);
     }
 
-
-    Raylib.DrawRectangle(10, 700, 500, 10, Color.BROWN);
+    foreach (Rectangle platform in platforms)
+    {
+        Raylib.DrawRectangle(10, 700, 500, 10, Color.BROWN);
+    }
+    
+    
 
 
 
