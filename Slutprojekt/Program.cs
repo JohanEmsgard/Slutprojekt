@@ -21,7 +21,7 @@ Random Generator = new Random();
 List<Rectangle> platforms = new List<Rectangle>();
 
 platforms.Add(new Rectangle(100, 100, 100, 100));
-platforms.Add(new Rectangle(100,100,-100,-100));
+
 
 float movementX = 0;
 float movementY = 0;
