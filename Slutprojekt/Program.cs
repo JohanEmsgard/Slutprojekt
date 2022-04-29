@@ -81,6 +81,11 @@ while (!Raylib.WindowShouldClose())
     if (Raylib.IsKeyDown(KeyboardKey.KEY_A)) movementX = -10;
     if (Raylib.IsKeyDown(KeyboardKey.KEY_D)) movementX = 10;
     // if (Raylib.IsKeyDown(KeyboardKey.KEY_S)) movementY = 10;
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_SPACE))
+    {
+        Console.WriteLine("Stupid");
+        int x = Generator.Next(Raylib.GetScreenWidth());
+    }
 
     if (position.Y + 40 >= Raylib.GetScreenHeight())
     {
