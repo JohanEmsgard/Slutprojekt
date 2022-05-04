@@ -84,7 +84,12 @@ while (!Raylib.WindowShouldClose())
     if (Raylib.IsKeyDown(KeyboardKey.KEY_SPACE))
     {
         Console.WriteLine("Stupid");
-        int x = Generator.Next(Raylib.GetScreenWidth());
+       // Raylib.DrawRectangleRec(platforms[0], Color.BROWN);
+       Raylib.DrawCircleV(position, 70, Color.BLACK);
+    }
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_L))
+    {
+        Raylib.DrawCircleV(position ,50, Color.RED);
     }
 
     if (position.Y + 40 >= Raylib.GetScreenHeight())
