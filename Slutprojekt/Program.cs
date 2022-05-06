@@ -121,7 +121,7 @@ while (!Raylib.WindowShouldClose())
 
     foreach (Rectangle platform in platforms)
     {
-        Raylib.DrawRectangleRec(platforms[0], Color.BROWN);
+        Raylib.DrawRectangleRec(platform, Color.BROWN);
     }
 
 
